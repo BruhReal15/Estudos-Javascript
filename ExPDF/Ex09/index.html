@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Ex 09</title>
+</head>
+<body>
+    <h1>Calcular preço !</h1>
+    <div>
+        <label for="produto">Código do Produto:</label>
+        <select name="produto" id="produto">
+            <option value="1001" selected> 1001</option>
+            <option value="1324"> 1324</option>
+            <option value="6548"> 6548</option>
+            <option value="0987"> 0987</option>
+            <option value="7623"> 7623</option>
+        </select>
+
+        <label for="qtd">Quantidade:</label>
+        <select name="qtd" id="qtd"></select>
+    </div>
+
+    R$<input type="text" id="preco" disabled class="numero">
+    <button id="add">Adicionar</button>
+    <button id="finalizar">Finalizar</button>
+
+    <script src="script.js" type="text/javascript"></script>
+</body>
+</html>

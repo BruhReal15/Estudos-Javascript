@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Ex 35</title>
+</head>
+<body>
+    <h1>Data Atual</h1>
+    <p id="resp"></p>
+    <script>
+      window.addEventListener("load", function(e){
+        let data = new Date
+        document.getElementById("resp").innerHTML = `A data de hoje é ${data.getDate()}/${data.getMonth()}/${data.getFullYear()}`
+        })
+    </script>
+</body>
+</html>

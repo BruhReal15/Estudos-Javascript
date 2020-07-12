@@ -1,0 +1,13 @@
+body{
+    text-align: center;
+}
+
+.numero{
+    display: block;
+    margin: 10px auto;
+    width: 110px;
+}
+
+#resp{
+    color: red;
+}

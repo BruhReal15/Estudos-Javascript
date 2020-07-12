@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Ex 11</title>
+    <style>
+        div{
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Alterando a cor </h1>
+    <div></div>
+    <button id="vermelho">vermelho</button>
+    <button id="verde">verde</button>
+
+    <script>
+
+        function trocarCor(novaCor){
+            let div = document.getElementsByTagName("div")[0]
+
+            div.style.backgroundColor = novaCor
+        }
+
+        document.getElementById("vermelho").addEventListener("click", () => trocarCor("red"))
+
+        document.getElementById("verde").addEventListener("click",   () => trocarCor("green"))
+    </script>
+
+    <!--
+        Na lista de exercícios esse é corresponde ao 12a
+    -->
+</body>
+</html>

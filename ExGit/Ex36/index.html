@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Ex 35</title>
+</head>
+<body>
+    <h1>Data Atual</h1>
+    <p id="resp"></p>
+    <script>
+        var meses ={
+            "0": "Janeiro",
+            "1": "Fevereiro",
+            "2": "Março",
+            "3": "Abril",
+            "4": "Maio",
+            "5": "Junho",
+            "6": "Julho",
+            "7": "Agosto",
+            "8": "Setembro",
+            "9": "Outubro",
+            "10": "Novembro",
+            "11": "Dezembro"
+        }
+
+      window.addEventListener("load", function(e){
+        let data = new Date
+        let mes = Number(data.getMonth())
+        
+        mes++
+
+        mes = mes.toString()
+        
+        document.getElementById("resp").innerHTML = `O mês seguinte ao atual é ${meses[mes]}`
+        })
+    </script>
+</body>
+</html>

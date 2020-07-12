@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Ex 34</title>
+</head>
+<body>
+    <h1>Acerte o número</h1>
+    Digite um número (0 - 100) <input type="number" min="0" max="100" id="valor">
+    <button id="aleatorio">Conferir</button>
+    <script>
+        document.getElementById("aleatorio").addEventListener("click", function(e){
+            let n = (Math.random().toFixed(1) * 100)
+            let valor = document.getElementById("valor").value
+
+            valor = Number(valor)
+
+            if(valor == n){
+                alert("PARABÉNS!!! Você acertou o número")
+            }
+            else{
+                alert(`Não foi dessa vez!
+O numero sorteador foi ${n}.
+Tente novamente`)
+            }
+
+        })
+    </script>
+</body>
+</html>
